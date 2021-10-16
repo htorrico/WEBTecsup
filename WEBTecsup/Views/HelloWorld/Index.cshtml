@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h2>@ViewBag.FullName</h2>
+<h1>Welcome to Tecsup</h1>
+<h2>Welcome to Tecsup</h2>
+<h3>Welcome to Tecsup</h3>
+
+@*Razor*@
+
+@for (int i = 0; i < 10; i++)
+{
+    if (i % 2 == 0)
+    {
+        <h2>@ViewBag.FullName</h2>
+    }
+
+}
+
+
+@if (ViewBag.FullName == "Hugo Torrico")
+{
+    <h2>Thanks!</h2>
+}
